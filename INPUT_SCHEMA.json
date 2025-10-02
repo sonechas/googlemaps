@@ -7,14 +7,14 @@
     "queries": {
       "title": "Search queries",
       "type": "array",
-      "description": "Enter one or more niche + city queries. Example: 'plumbers in London'.",
+      "description": "Enter one or more niche + city queries, e.g. 'plumbers in London'.",
       "editor": "stringList",
       "default": ["plumbers in London"]
     },
     "limit": {
       "title": "Result limit",
       "type": "integer",
-      "description": "Maximum number of results to collect per query.",
+      "description": "Maximum number of businesses to scrape per query.",
       "default": 20,
       "minimum": 1
     }
