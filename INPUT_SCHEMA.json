@@ -1,0 +1,23 @@
+{
+  "title": "Google Maps No-Website Scraper",
+  "description": "Find businesses on Google Maps that do not have a website.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "queries": {
+      "title": "Search queries",
+      "type": "array",
+      "description": "Enter one or more niche + city queries. Example: 'plumbers in London'.",
+      "editor": "stringList",
+      "default": ["plumbers in London"]
+    },
+    "limit": {
+      "title": "Result limit",
+      "type": "integer",
+      "description": "Maximum number of results to collect per query.",
+      "default": 20,
+      "minimum": 1
+    }
+  },
+  "required": ["queries"]
+}
